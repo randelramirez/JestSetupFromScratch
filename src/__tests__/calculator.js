@@ -21,7 +21,7 @@ test('the clear button swithces from AC to C when there is an entry', () => {
   expect(clearButton.textContent).toBe('AC')
 })
 
-test('the clear button swithces from AC to C when there is an entry (using jest-dom)', () => {
+test('the clear button swithces from AC to C when there is an entry (using jest-dom/extend-expect)', () => {
   const {getByText} = render(<Calculator />)
   const clearButton = getByText('AC')
 

@@ -13,4 +13,7 @@ module.exports = {
     // to load css files
     '\\.css': require.resolve('./test/style-mock.js'),
   },
+  // setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  // or we can use a setup file instead
+  setupFilesAfterEnv: ['./jest-setup.js'],
 }
